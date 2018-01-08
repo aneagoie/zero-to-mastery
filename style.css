@@ -1,4 +1,21 @@
 /*Css frame ~GetHubs*/
-p {
-	color: red;
+body {
+    background-color:  #99d6ff;
+    text-align: center;
 }
+}
+
+h1 {
+    color: white;
+   background: Green;
+     text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+head {
+  boarder:20px solid blue;
+  }
