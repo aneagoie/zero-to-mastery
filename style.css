@@ -1,21 +1,43 @@
-/*Css frame ~GetHubs*/
-body {
-    background-color:  #99d6ff;
-    text-align: center;
-}
-}
-
-h1 {
-    color: white;
-   background: Green;
-     text-align: center;
+body{
+  margin: 0;
+  font-family: Quicksand, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1455461491901-a0990c10d84c?auto=format&fit=crop&w=750&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-p {
-    font-family: verdana;
-    font-size: 20px;
+header{
+  margin-top: 20px;
+  text-align: right;
 }
 
-head {
-  boarder:20px solid blue;
-  }
+header a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+header a:hover{
+  color: #6FD4D4;
+}
+
+#intro{
+  margin-top: 120px;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 2px 2px 8px black;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+footer p{
+  margin-top: 100px;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: #64CACA;
+}
