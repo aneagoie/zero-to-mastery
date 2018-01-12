@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: ubuntu;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    padding: 2vw;
+}
+
+#brand-name {
+    font-size: 1.3vw;
+    font-weight: 900;
+}
+
+#main-container {
+    width: 90%;
+    margin: auto;
+}
+
+#main-container h1 {
+    text-align: center;
+    font-size: 4vw;
+}
+
+#introduction {
+    display: flex;
+}
+
+#introduction-media {
+    width: 45%;
+    padding: 2vw;
+}
+
+#introduction-media video {
+    width: 100%;
+}
+
+.cta {
+    background: rgb(255, 0, 47);
+    width: 40%;
+    letter-spacing: 1vw;
+    text-align: center;
+    padding: 2vw;
+    border-radius: 5px;
+}
+
+#testimonial-wrapper {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px dashed rgb(72, 255, 0);
+    margin-top: 2vw;
+    padding-top: 2vw;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 2vw;
+    width: 25%;
+    border: 1px inset rgb(240, 5, 115);
+}
+
+.testimonial:not(:first-child) {
+    margin-left: 10px;
+}
+
+.testimonial img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.testimonial .header {
+    font-weight: 900;
+    font-size: 1.8vw;
+}
+
+footer {
+    margin-top: 2vw;
+    padding-top: 2vw;
+    border-top: 1px dashed rgb(72, 255, 0);
+    text-align: center;
+}
+
+
+/* for mobile screen   */
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 5vw;
+        margin: auto;
+    }
+    #brand-name {
+        font-size: 5vw;
+        font-weight: 900;
+    }
+    #main-container h1 {
+        font-size: 8vw;
+    }
+    #introduction {
+        flex-direction: column;
+    }
+    #introduction-media {
+        width: 100%;
+    }
+    .cta {
+        width: 60%;
+    }
+    #testimonial-wrapper {
+        justify-content: flex-start;
+        overflow-x: auto;
+        margin-top: 5vw;
+        padding-top: 5vw;
+    }
+    .testimonial {
+        min-width: 95%;
+    }
+    .testimonial .header {
+        font-size: 6vw;
+    }
+}
+
+
+/* to hide the scroll bars. Doesn't look good in browsers. Style it if you want  */
+
+::-webkit-scrollbar {
+    display: none;
+}
