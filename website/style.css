@@ -1,11 +1,10 @@
 body {
     margin: 0px;
-    overflow-x: hidden;
     font-family: ubuntu;
+    overflow-x: hidden;
 }
 
 header {
-    width: 100%;
     margin: auto;
     padding: 2vw;
 }
@@ -13,6 +12,7 @@ header {
 #brand-name {
     font-size: 1.3vw;
     font-weight: 900;
+    padding: 2vw;
 }
 
 #main-container {
@@ -27,15 +27,22 @@ header {
 
 #introduction {
     display: flex;
+    align-items: stretch;
 }
 
 #introduction-media {
     width: 45%;
     padding: 2vw;
+    margin: 0px;
 }
 
-#introduction-media video {
+#introduction-media iframe {
     width: 100%;
+    height: 110%;
+}
+
+#introduction-content {
+    width: 50%;
 }
 
 .cta {
@@ -53,13 +60,15 @@ header {
     border-top: 1px dashed rgb(72, 255, 0);
     margin-top: 2vw;
     padding-top: 2vw;
+    overflow-x: scroll;
 }
 
 .testimonial {
     text-align: center;
     padding: 2vw;
     width: 25%;
-    border: 1px inset rgb(240, 5, 115);
+    min-width: 220px;
+    background: rgb(240, 234, 234);
 }
 
 .testimonial:not(:first-child) {
@@ -102,6 +111,9 @@ footer {
         flex-direction: column;
     }
     #introduction-media {
+        width: 95%;
+    }
+    #introduction-content {
         width: 100%;
     }
     .cta {
@@ -114,16 +126,13 @@ footer {
         padding-top: 5vw;
     }
     .testimonial {
-        min-width: 95%;
+        min-width: 90%;
     }
     .testimonial .header {
         font-size: 6vw;
     }
-}
-
-
-/* to hide the scroll bars. Doesn't look good in browsers. Style it if you want  */
-
-::-webkit-scrollbar {
-    display: none;
+    /* to hide the scroll bars. Doesn't look good in browsers. Style it if you want   for mobile only */
+     ::-webkit-scrollbar {
+        display: none;
+    }
 }
