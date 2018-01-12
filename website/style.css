@@ -1,0 +1,138 @@
+body {
+    margin: 0px;
+    font-family: ubuntu;
+    overflow-x: hidden;
+}
+
+header {
+    margin: auto;
+    padding: 2vw;
+}
+
+#brand-name {
+    font-size: 1.3vw;
+    font-weight: 900;
+    padding: 2vw;
+}
+
+#main-container {
+    width: 90%;
+    margin: auto;
+}
+
+#main-container h1 {
+    text-align: center;
+    font-size: 4vw;
+}
+
+#introduction {
+    display: flex;
+    align-items: stretch;
+}
+
+#introduction-media {
+    width: 45%;
+    padding: 2vw;
+    margin: 0px;
+}
+
+#introduction-media iframe {
+    width: 100%;
+    height: 110%;
+}
+
+#introduction-content {
+    width: 50%;
+}
+
+.cta {
+    background: rgb(255, 0, 47);
+    width: 40%;
+    letter-spacing: 1vw;
+    text-align: center;
+    padding: 2vw;
+    border-radius: 5px;
+}
+
+#testimonial-wrapper {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px dashed rgb(72, 255, 0);
+    margin-top: 2vw;
+    padding-top: 2vw;
+    overflow-x: scroll;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 2vw;
+    width: 25%;
+    min-width: 220px;
+    background: rgb(240, 234, 234);
+}
+
+.testimonial:not(:first-child) {
+    margin-left: 10px;
+}
+
+.testimonial img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.testimonial .header {
+    font-weight: 900;
+    font-size: 1.8vw;
+}
+
+footer {
+    margin-top: 2vw;
+    padding-top: 2vw;
+    border-top: 1px dashed rgb(72, 255, 0);
+    text-align: center;
+}
+
+
+/* for mobile screen   */
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 5vw;
+        margin: auto;
+    }
+    #brand-name {
+        font-size: 5vw;
+        font-weight: 900;
+    }
+    #main-container h1 {
+        font-size: 8vw;
+    }
+    #introduction {
+        flex-direction: column;
+    }
+    #introduction-media {
+        width: 95%;
+    }
+    #introduction-content {
+        width: 100%;
+    }
+    .cta {
+        width: 60%;
+    }
+    #testimonial-wrapper {
+        justify-content: flex-start;
+        overflow-x: auto;
+        margin-top: 5vw;
+        padding-top: 5vw;
+    }
+    .testimonial {
+        min-width: 90%;
+    }
+    .testimonial .header {
+        font-size: 6vw;
+    }
+    /* to hide the scroll bars. Doesn't look good in browsers. Style it if you want   for mobile only */
+     ::-webkit-scrollbar {
+        display: none;
+    }
+}
