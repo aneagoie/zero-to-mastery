@@ -1,67 +1,98 @@
-body {
-    margin: 0px;
-    font-family: ubuntu;
-    overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
 }
-
+body{
+  background-color: #CFD8DC;
+}
 header {
-    margin: auto;
-    padding: 2vw;
+  height: 5vw ;
+  background-color: #F4511E;
+  position: relative;
+  box-shadow: 5px 10px 18px #424242;
+}
+header > span{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size:2vw ;
+  color: #FBE9E7;
 }
 
-#brand-name {
-    font-size: 1.3vw;
-    font-weight: 900;
-    padding: 2vw;
+.coursename{
+  height: 10vw;
+  background-color: #FF6E40;
 }
 
-#main-container {
-    width: 90%;
-    margin: auto;
+.coursename > span{
+  padding-top: 3%;
+  color: #E0E0E0;
+  float: right;
+  padding-right: 30px;
+  font-size: 3vw;
+  font-weight: bold;
+
 }
 
-#main-container h1 {
-    text-align: center;
-    font-size: 4vw;
+.main-container{
+  margin-left: 5%;
+  margin-right:5%;
+  height: auto;
+  background-color: #689F38;
+  margin-top: 3%;
+  padding: 3%;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0, .65);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0, .65);
+  box-shadow: 0 0 10px rgba(0,0,0, .65);
 }
 
-#introduction {
-    display: flex;
-    align-items: stretch;
+.introduction{
+  height: 300px;
+  width: 40%;
+  float: left;
+  background-color: #FFF9C4;
+  margin-right:3%;
 }
 
-#introduction-media {
-    width: 45%;
-    padding: 2vw;
-    margin: 0px;
-}
+.intro-text{
+  height: 100%;
+  width: 57%;
 
-#introduction-media iframe {
-    width: 100%;
-    height: 110%;
+  float: left;
 }
-
-#introduction-content {
-    width: 50%;
+.introduction > iframe{
+  height: 100%;
+  width: 100%;
 }
-
-.cta {
-    background: rgb(255, 0, 47);
-    width: 40%;
-    letter-spacing: 1vw;
-    text-align: center;
-    padding: 2vw;
-    border-radius: 5px;
+.intro-text, h2{
+  color: #E0E0E0;
+}
+.intro-text ul{
+  padding-left: 40px;
+}
+.cta{
+  margin-top: 20px;
+  background: #EF9A9A;
+  width: 40%;
+  letter-spacing: 1vw;
+  text-align: center;
+  padding: 2vw;
+  border-radius: 20px;
+}
+.main-container::after{
+  clear: both;
+  content: "";
+  display: table;
 }
 
 #testimonial-wrapper {
     display: flex;
     justify-content: space-around;
-    border-top: 1px dashed rgb(72, 255, 0);
     margin-top: 2vw;
     padding-top: 2vw;
     overflow-x: scroll;
-}
+    padding-bottom: 2vw;
+  }
 
 .testimonial {
     text-align: center;
@@ -69,6 +100,9 @@ header {
     width: 25%;
     min-width: 220px;
     background: rgb(240, 234, 234);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0, .65);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0, .65);
+    box-shadow: 0 0 10px rgba(0,0,0, .65);
 }
 
 .testimonial:not(:first-child) {
@@ -84,40 +118,35 @@ header {
     font-weight: 900;
     font-size: 1.8vw;
 }
-
 footer {
     margin-top: 2vw;
     padding-top: 2vw;
-    border-top: 1px dashed rgb(72, 255, 0);
+    padding-bottom: 2vw;
     text-align: center;
+    background-color: #607D8B;
 }
 
-
-/* for mobile screen   */
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     body {
         font-size: 5vw;
         margin: auto;
     }
-    #brand-name {
-        font-size: 5vw;
-        font-weight: 900;
+    header > span{
+      font-size: 3vw;
     }
-    #main-container h1 {
-        font-size: 8vw;
+    .coursename > span{
+      font-size: 4vw;
     }
-    #introduction {
-        flex-direction: column;
+    .main-container{
+      font-size: 3vw;
     }
-    #introduction-media {
-        width: 95%;
+    .introduction{
+      float: none;
+      width: 100%;
     }
-    #introduction-content {
-        width: 100%;
-    }
-    .cta {
-        width: 60%;
+    .intro-text{
+      float: none;
+      width: 100%;
     }
     #testimonial-wrapper {
         justify-content: flex-start;
