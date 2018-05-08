@@ -1,0 +1,21 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+    width: 75px
+}
+body {
+	background: linear-gradient(to top, green, rgba(255, 175, 100, 6));
+	background-size: 800px 700px;
+}
+img {
+	align-items: middle;
+}
+h1 {
+	text-align: center;
+	color: rgba(142,100,62,2);
+}
+h2 {
+	text-decoration-color: rgba(255, 175, 100, 6);
+}
